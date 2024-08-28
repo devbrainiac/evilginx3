@@ -12,9 +12,8 @@ clean:
 	@rm -f ./bin/$(TARGET)
 
 install:
-        @mkdir -p /root/evilginx
 	@mkdir -p /root/evilginx/phishlets
-	@mkdir -p /root/evilginx/redirectors
+	@mkdir -p /root/evilginx/templates
 	@cp ./phishlets/* /root/evilginx/phishlets/
-	@cp ./templates/* /root/evilginx/redirectors/
+	@cp ./templates/* /root/evilginx/templates/
 	@cp ./bin/$(TARGET) /usr/local/bin
